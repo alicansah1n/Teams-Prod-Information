@@ -1,0 +1,35 @@
+{
+  "name": "teams-prod-information",
+  "version": "1.0.0",
+  "description": "Jira release'lerindeki 'To be Deployed' maddeleri canlı çıkış sonrası 'Completed' yapar, release'i kapatır ve Teams kanalına bildirim gönderir.",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.11"
+  },
+  "scripts": {
+    "cli": "tsx src/cli.ts",
+    "doctor": "tsx src/cli.ts doctor",
+    "versions": "tsx src/cli.ts versions",
+    "release": "tsx src/cli.ts release",
+    "notify": "tsx src/cli.ts notify",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@inquirer/ansi": "^2.0.8",
+    "@inquirer/core": "^12.0.3",
+    "@inquirer/figures": "^2.0.9",
+    "@inquirer/prompts": "^8.7.2",
+    "commander": "^15.0.0",
+    "dotenv": "^18.0.3",
+    "p-limit": "^7.3.3",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.1"
+  }
+}

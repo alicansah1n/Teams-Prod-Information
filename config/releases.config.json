@@ -1,0 +1,16 @@
+{
+  "defaults": {
+    "sourceStatus": "To be Deployed",
+    "targetStatus": "Completed",
+    "transitionFields": {},
+    "addComment": true,
+    "commentTemplate": "Bu madde {date} {time} tarihinde {version} sürümü ile canlıya alınmıştır.",
+    "appendTimeToVersionDescription": true
+  },
+  "projects": {
+    "OZE": {
+      "displayName": "Özel Entegratörlük",
+      "transitionFields": { "resolution": { "name": "Done" } }
+    }
+  }
+}
